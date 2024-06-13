@@ -33,7 +33,7 @@ for i in range(duration):
     if not ret:
         break
     # Save the frame as an image file in the frame folder
-    frame_file = os.path.join(frame_folder, f'frame_{frame_index:05d}.jpg')
+    frame_file = os.path.join(frame_folder, f'frame_{frame_index:05d}_out.jpg')
     cv2.imwrite(frame_file, frame)
     frame_index += 1
 
